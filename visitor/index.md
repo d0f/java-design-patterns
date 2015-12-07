@@ -16,7 +16,7 @@ tags:
 
 **Applicability:** 使用访问者模式
 
-* an object structure contains many classes of objects with differing interfaces, and you want to perform operations on these objects that depend on their concrete classes
+* 一个对象结构包含了许多类的对象，它们继承不同的接口，并且你希望在它们的具体类上执行这些对象的操作。
 * many distinct and unrelated operations need to be performed on objects in an object structure, and you want to avoid "polluting" their classes with these operations. Visitor lets you keep related operations together by defining them in one class. When the object structure is shared by many applications, use Visitor to put operations in just those applications that need them
 * the classes defining the object structure rarely change, but you often want to define new operations over the structure. Changing the object structure classes requires redefining the interface to all visitors, which is potentially costly. If the object structure classes change often, then it's probably better to define the operations in those classes
 
