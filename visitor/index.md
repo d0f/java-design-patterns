@@ -17,7 +17,7 @@ tags:
 **Applicability:** 使用访问者模式
 
 * 一个对象结构包含了许多类的对象，它们继承不同的接口，并且你希望在它们的具体类上执行这些对象的操作。
-* 许多不同的和不相关的操作需要在某个对象结构中某个对象进行对象，并且你想避免“污染”他们的类与这些操作。访问者可以通过在一个类中定义它们来保持相关的操作。当对象结构被许多应用程序共享时，使用访问者将操作在需要它们的应用程序中
+* 许多不同的和不相关的操作需要在某个对象结构中某个对象进行对象，并且你想避免“污染”他们操作所在的类。访问者可以相关性的操作定义在同一个类中。当对象结构被许多应用程序共享时，可以在需要的时候使用访问这模式
 * the classes defining the object structure rarely change, but you often want to define new operations over the structure. Changing the object structure classes requires redefining the interface to all visitors, which is potentially costly. If the object structure classes change often, then it's probably better to define the operations in those classes
 
 **Real world examples:**
