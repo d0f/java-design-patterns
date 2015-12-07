@@ -10,9 +10,7 @@ tags:
  - Gang Of Four
 ---
 
-**Intent:** Represent an operation to be performed on the elements of an object
-structure. Visitor lets you define a new operation without changing the classes
-of the elements on which it operates.
+**Intent:** 表示在对象结构的元素上执行的操作。访问者可以让你定义一个新的操作，而不改变它操作的元素所在的类。
 
 ![alt text](./etc/visitor_1.png "Visitor")
 
